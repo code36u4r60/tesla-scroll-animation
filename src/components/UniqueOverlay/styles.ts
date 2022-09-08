@@ -44,12 +44,10 @@ export const Footer = styled(motion.footer)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0.8rem;
     li {
       list-style: none;
       font-size: 14px;
-      & + li {
-        margin: 10px 0 0;
-      }
       a {
         text-decoration: none;
         color: #393c41;
@@ -65,9 +63,6 @@ export const Footer = styled(motion.footer)`
     margin-bottom: 38px;
     ul {
       flex-direction: row;
-      li + li {
-        margin: 0 0 0 30px;
-      }
     }
   }
 `;

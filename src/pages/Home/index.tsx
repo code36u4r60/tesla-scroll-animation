@@ -27,6 +27,7 @@ export const models = [
   {
     title: "Acessórios",
     description: "",
+    showBtn: false,
   },
 ];
 
@@ -44,6 +45,7 @@ export const Home = () => {
                 <DefaultOverlayContent
                   label={model.title}
                   description={model.description}
+                  showBtn={model.showBtn}
                 />
               }
             />

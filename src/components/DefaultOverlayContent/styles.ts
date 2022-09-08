@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-
+  height: 100vh;
   transition: transform 0.5s ease-in-out 0.5s, opacity 0.5s ease-in-out 0.5s;
 `;
 export const Heading = styled.div`
@@ -30,7 +30,7 @@ export const Heading = styled.div`
 `;
 
 export const Buttons = styled.div`
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,11 +45,14 @@ export const Buttons = styled.div`
     font-size: 12px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
-    padding: 13px 40px;
+    padding: 1rem 2.8rem;
     border-radius: 8px;
     border: none;
     outline: 0;
-    width: 100%;
+
+    :only-child {
+      margin-bottom: 2rem;
+    }
 
     &.white {
       background: #fff;
@@ -59,7 +62,7 @@ export const Buttons = styled.div`
   }
 
   @media (min-width: 600px) {
+    margin-bottom: 4rem;
     flex-direction: row;
-    margin-bottom: 8rem;
   }
 `;

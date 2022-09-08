@@ -3,9 +3,14 @@ import { Buttons, Container, Heading } from "./styles";
 interface Props {
   label: string;
   description: string;
+  showBtn?: boolean;
 }
 
-export const DefaultOverlayContent = ({ label, description }: Props) => {
+export const DefaultOverlayContent = ({
+  label,
+  description,
+  showBtn = true,
+}: Props) => {
   return (
     <Container>
       <Heading>
@@ -15,7 +20,7 @@ export const DefaultOverlayContent = ({ label, description }: Props) => {
 
       <Buttons>
         <button>Custom Order</button>
-        <button className="white">Existing Inventory</button>
+        {showBtn && <button className="white">Existing Inventory</button>}
       </Buttons>
     </Container>
   );
