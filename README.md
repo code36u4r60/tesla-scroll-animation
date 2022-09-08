@@ -17,4 +17,4 @@
 
 ## 👀 Expiration
 
-[![Typescript](https://img.shields.io/badge/-Tesla-05122A?style=for-the-badge&color=282a36&logo=tesla)](https://www.tesla.com/)
+[![Tesla home page](https://img.shields.io/badge/-Tesla-05122A?style=for-the-badge&color=282a36&logo=tesla)](https://www.tesla.com/)
