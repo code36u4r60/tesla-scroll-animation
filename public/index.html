@@ -20,10 +20,39 @@
 
     <link href="http://fonts.cdnfonts.com/css/gotham-ssm" rel="stylesheet" />
 
+    <style>
+      #live-demo {
+        position: fixed;
+        z-index: 999;
+        width: 24rem;
+        transform: rotate(45deg);
+        top: 4.6rem;
+        right: -6rem;
+        padding: 0.8rem;
+        background: rgba(74, 74, 74, 0.65);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        -webkit-backdrop-filter: blur(15.5px);
+        backdrop-filter: blur(15.5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        text-align: center;
+        font-weight: normal;
+        font-size: 1rem;
+        color: var(--white);
+      }
+      #live-demo .invert {
+        display: inline-flex;
+        transform: rotate(-90deg);
+      }
+    </style>
+
     <title>Tesla</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="live-demo">
+      <p>🚀 it's not the real page <span class="invert">🚀</span></p>
+    </div>
     <div id="root"></div>
   </body>
 </html>

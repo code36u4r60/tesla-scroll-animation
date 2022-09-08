@@ -12,4 +12,9 @@ export const GlobalStyles = createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   text-size-adjust: 100%;
 }
+
+button{
+  cursor: pointer;
+}
+
 `;
